@@ -1,0 +1,260 @@
+/* ---------------CHƯƠNG----------------- */
+                                /*-------Trang chủ----*/
+.content {
+    text-align: center;
+    margin-top: 20px;
+}
+.title {
+    font-size: 24px;
+    color: rgb(180, 139, 67);
+    font-weight: 700;
+}
+.section{
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.card{
+    flex: 1;
+    padding: 10px;
+
+}
+.image{
+    flex:1;
+    overflow: hidden;
+    position: relative;
+    min-height: 260px;
+    border-radius: 10px; /* bo góc chính cho container */
+}
+.image img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit; /* giữ bo góc đồng nhất */
+    transition: transform 0.5s ease;
+}
+.carousel-dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+    z-index: 10;
+}
+.carousel-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(171, 29, 29, 0.5);
+    border: 1px solid #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.carousel-dot.active {
+    background: orange;
+}
+.btn{
+    padding: 10px 20px;
+    background-color: rgb(180, 139, 67);
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.btn a{
+    color: white;
+    text-decoration: none;
+    font-weight: 700px;
+}
+.btn:hover {
+    background-color: rgb(150, 100, 50);
+    cursor: pointer;
+}
+/*----------------Ưu đãi------------------------*/
+
+.image.uudai {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+      
+}
+.image.uudai img{
+    object-fit: contain;
+    
+    border-radius: 40px;
+}
+/* ---------------ĐÁNH GIÁ KHÁCH HÀNG----------------- */
+
+
+.testimonial-section {
+    display: block;              
+    position: relative;
+    overflow: hidden;
+    padding: 40px 0;
+}
+
+/* Container carousel */
+.testimonial-container {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+/* Mỗi slide */
+.testimonial-card {
+    min-width: 100%;             /*mỗi lần hiển thị 1 card */
+    display: flex;
+    justify-content: center;    
+}
+
+/* Nội dung thật bên trong */
+.card-inner {
+    width: 500px;                
+    max-width: 90%;              
+
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+    padding: 24px;
+
+    display: flex;
+    flex-direction: column;      /*ảnh / text / tên mỗi cái 1 dòng */
+    align-items: center;
+    text-align: center;
+}
+
+/* Ảnh */
+.testimonial-photo {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #f9c74f;
+    margin-bottom: 15px;
+}
+
+/* Nội dung */
+.card-inner p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+/* Tên */
+.card-inner h3 {
+    font-size: 20px;
+    color: rgb(180, 139, 67);
+    font-weight: 700;
+    margin: 0;
+}
+
+/* DOTS */
+.carousel-dots {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+}
+
+.carousel-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #ccc;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.carousel-dot.active {
+    background: orange;
+}
+
+                                /*-------Giới thiệu----*/
+.gioithieu1{
+    width: 100%;
+    
+}
+.card-gioithieu{
+    display: block;
+    margin: 20px 50px;
+    
+}
+.card-gioithieu p{
+    
+    margin: 10px 0;
+}
+.gioithieu{
+    display: block;
+    width: 100%;
+    text-align: center;
+    
+}
+#card-image{
+    width: 100%;
+    display: flex;
+}
+.image-gioithieu {
+    display: block;
+    width: 60%;
+    max-width: 600px;
+    margin: 0 auto; 
+    border-radius: 5px;
+    aspect-ratio: 16/9;
+}
+
+.image-gioithieu img {
+    width: 600px;
+    max-width: 100%; 
+    height: 100%;
+    object-fit: cover;
+    border-radius:inherit ;
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 ; 
+}
+.image-gioithieu2{
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    
+    text-align: center;
+    
+}
+.image-gioithieu2 img{
+    width: 100%;
+    height: 400px;
+    border-radius: 5px;
+
+}
+/*responsive*/
+@media(max-width: 768px){
+    .card-gioithieu{
+        margin: 20px 15px;
+    }
+    .image-gioithieu {
+        width: 100%;
+        
+    }
+    .image-gioithieu2{
+        width: 100%;
+      
+        margin: 0 ;
+        padding: 0;
+    }
+    .image-gioithieu2 img{
+        width: 80%;
+    }
+
+}

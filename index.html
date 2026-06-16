@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Quán ăn 3 Anh Em là điểm đến dành cho những ai yêu thích ẩm thực nướng Hàn Quốc thơm ngon, sạch và đậm đà hương vị truyền thống.">
+    <meta name="keywords" content="3 anh em, quan an 3 anh em, thit nuong, lau, do an han quoc, nha hang dong da, yen lang">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Trang chủ - 3 Anh Em - Ăn là ghiền">
+    <meta property="og:description" content="Quán ăn 3 Anh Em là điểm đến dành cho những ai yêu thích ẩm thực nướng Hàn Quốc thơm ngon, sạch và đậm đà hương vị truyền thống.">
+    <meta property="og:image" content="images/assets/anh_3ae.webp">
+    <title>Trang chủ - 3 Anh Em - Ăn là ghiền</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/Chương/Chuong.css">
+</head>
+<body>
+<!--MENU-->
+    <header class="header">
+            <div class="container header-content">
+
+                <!-- Hamburger menu toggler -->
+                <button class="nav-toggle" aria-label="Toggle navigation menu">☰</button>
+
+                <!-- Logo -->
+                <div class="logo">
+                    <a href="index.html"><img src="images/assets/anh_3ae.webp" alt="logo"></a>
+                </div>
+
+                <!-- Menu -->
+                <nav class="menu">
+                    <ul>
+                        <li><a href="gioithieu.html">Giới thiệu</a></li>
+                        <li><a href="thucdon2.html">Thực đơn</a></li>
+                        <li><a href="datban.html">Đặt bàn</a></li>
+                        <li><a href="uudai.html">Ưu đãi</a></li>
+                        <li><a href="lienhe.html">Liên hệ</a></li>
+                    </ul>
+                </nav>
+                
+                <!---Login + Search-->
+                <div class="login">
+                        <!---Nút đăng nhập-->
+                        <button class="btn-login">Đăng nhập</button>
+                        <!---Form đăng nhập-->
+                        <div id="form-login">
+                            <form>
+                                <div class="form-group" >
+                                    <input type="text" id="username" class="form-input" placeholder="Tên đăng nhập...">
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" id="password" class="form-input" placeholder="Mật khẩu...">
+                                </div>
+                                
+                                <input type="submit" value="Đăng nhập" class="submit">
+                            </form>        
+                        </div>
+                        <!---Box đăng xuất (hiện sau khi log in)-->
+                        <div id="logout-box" >
+                            <button id="btn-logout">Đăng xuất</button>
+                        </div>
+                </div>
+                    <div class="search">
+                        <input type="search" placeholder="Tìm kiếm...">
+                    </div>
+                </div>
+        </header>
+<!-- BANNER -->
+<section class="banner">
+    
+        <!--img BANNER-->
+        <div class="banner-image">
+            <img src="images/assets/banner_trangchu.webp" alt="banner">
+        </div>
+    
+</section>
+<!---Nội dung chính-->
+<main class="container">
+    <!---Về chúng tôi-->
+    <h2 class="title content">Về chúng tôi</h2>
+    <section class="section">
+        <!---Nội dung về chúng tôi -->
+        <div class="card">
+            <h3 class="title">3 ANH EM - ĂN LÀ GHIỀN</h3>
+            <p>Quán ăn 3 Anh Em là điểm đến dành cho những ai yêu thích ẩm thực ngon, sạch và đậm đà hương vị truyền thống. 
+                Mỗi món ăn đều được chọn lọc nguyên liệu kỹ lưỡng và chế biến với tâm huyết,
+                mang đến cảm giác như bữa cơm gia đình.
+                Không gian quán ấm cúng, thoải mái, phù hợp cho những buổi gặp gỡ bạn bè hay quây quần bên người thân,
+                cùng phong cách phục vụ thân thiện và tận tình.</p>
+                <button onclick="window.location.href='gioithieu.html'" class="btn"><a  href="gioithieu.html">Xem chi tiết</a></button>
+        </div>
+        <!--ảnh về chúng tôi-->
+        <div class="image vechungtoi">
+            <img src="images/index/vechungtoi01.webp" alt="Về chúng tôi 1">
+            <img src="images/index/vechungtoi02.webp" alt="Về chúng tôi 2">
+            <img src="images/index/vechungtoi03.webp" alt="Về chúng tôi 2">
+            <img src="images/index/vechungtoi04.webp" alt="Về chúng tôi 2">
+            <img src="images/index/vechungtoi05.webp" alt="Về chúng tôi 2">
+            <div class="carousel-dots"></div>
+        </div>
+
+    </section>
+    <!---Ẩm thực-->
+    <h2 class="title content">Ẩm thực</h2>
+    <section class="section">
+        <!---ảnh ẩm thực-->
+        <div class="image amthuc">
+            <img src="images/index/amthuc0.webp" alt="Món ăn 1">
+            <img src="images/index/amthuc1.webp" alt="Món ăn 2">
+            <img src="images/index/amthuc2.webp" alt="Món ăn 3">
+            <img src="images/index/amthuc3.webp" alt="Món ăn 4">
+            <div class="carousel-dots"></div>
+        </div>
+        <!---Nội dung ẩm thực-->
+        <div class="card">
+            <h3 class="title">Món ngon - Gắn kết - Bùng nổ hương vị</h3>
+            <p>Ẩm thực tại quán 3 Anh Em mang đậm phong cách Hàn Quốc với các món nướng thơm ngon,
+                 đậm đà như galbi, ba chỉ bò cùng kim chi đặc trưng. Tất cả đều được chế biến theo công thức chuẩn vị.
+                Nguyên liệu tươi ngon, tẩm ướp tinh tế kết hợp với không gian ấm cúng,
+                mang đến trải nghiệm ẩm thực hấp dẫn và gần gũi.</p>
+            <button onclick="window.location.href='thucdon2.html'" class="btn"><a href="thucdon2.html">Xem chi tiết</a></button>
+        </div>
+    </section>
+    <!---Ưu đãi-->
+    <h2 class="title content">Ưu đãi</h2>
+    <section class="section">
+        <div class="card">
+            <h3 class="title">Ưu đãi ngập tràn - Ăn là mê ngay</h3>
+            <p>
+                Quán 3 Anh Em mang đến nhiều ưu đãi hấp dẫn 
+                như combo món Hàn giá tiết kiệm, 
+                giảm giá theo nhóm và khuyến mãi giờ vàng.
+                Đây là địa điểm lý tưởng để vừa thưởng thức món ngon vừa 
+                tiết kiệm chi phí cùng bạn bè và gia đình.
+            </p>
+            <button onclick="window.location.href='uudai.html'" class="btn"><a href="uudai.html">Xem chi tiết</a></button>
+        </div>
+        <div class="image uudai"><img src="images/index/uudai01-2.webp" alt="Ưu đãi"></div>
+    </section>
+
+    <!---Cảm nhận khách hàng-->
+    <h2 class="title content">Cảm nhận khách hàng</h2>
+    <section class="section testimonial-section">
+        <div class="testimonial-container"> 
+            <div class="testimonial-card">
+                <div class="card-inner">
+                <img class="testimonial-photo" src="images/index/khachhang1.webp" alt="Khách hàng">
+                <p>Lần đầu ghé 3 Anh Em mà ấn tượng thực sự! 
+                    Combo dẻ sườn bò với má heo nướng sốt đậm đà, 
+                    thịt mềm mọng thấm vị cực kỳ. Ăn một miếng là ghiền luôn, 
+                    rất đáng thử!</p>
+                <h3>Cristiano Ronaldo</h3>
+                </div>
+            </div>
+            
+            <div class="testimonial-card">
+                <div class="card-inner">
+                <img class="testimonial-photo" src="images/index/khachhang2.webp" alt="Khách hàng">
+                <p>Mình khá khó tính trong ăn uống nhưng phải công nhận quán làm món rất có tâm.
+                    Đồ tươi, nướng lên không bị khô mà vẫn giữ được độ mềm và ngọt. 
+                    Nhân viên phục vụ nhanh và nhiệt tình.</p>
+                <h3>Bukayo Saka</h3>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="card-inner">
+                <img class="testimonial-photo" src="images/index/khachhang3.webp" alt="Khách hàng">
+                <p>Giá cả hợp lý so với chất lượng. Đi nhóm bạn gọi combo là vừa ngon vừa tiết kiệm.
+                    Đặc biệt thích dẻ sườn bò ở đây, ăn xong là muốn quay lại lần nữa ngay.</p>
+                <h3>Anh Long Antony</h3>
+                </div>
+            </div>
+            
+            <div class="testimonial-card">
+                <div class="card-inner">
+                <img class="testimonial-photo" src="images/index/khachhang4.webp" alt="Khách hàng">
+                <p>Quán đông nhưng phục vụ vẫn rất ổn, không bị chậm.
+                    Đồ nướng rất thơm, nước chấm ngon, ăn rất cuốn. Cuối tuần nào cũng muốn ghé.</p>
+                <h3>Marco Reus</h3>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="card-inner">
+                <img class="testimonial-photo" src="images/index/khachhang5.webp" alt="Khách hàng">
+                <p>Mình biết quán qua bạn bè giới thiệu và giờ thành “khách quen” luôn rồi.
+                    Ăn ở đây có cảm giác như ăn cơm nhà nhưng chất lượng thì như nhà hàng.</p>
+                <h3>Kylian MP3</h3>
+                </div>
+            </div>
+            
+            <div class="testimonial-card">
+                <div class="card-inner">
+                <img class="testimonial-photo" src="images/index/khachhang6.webp" alt="Khách hàng">
+                <p>Quán này đúng kiểu “ăn là ghiền” thật 😆
+                    Thịt nướng thơm phức, ăn miếng nào dính miếng đó, cực kỳ cuốn luôn!</p>
+                <h3>Ousmane Dembelé</h3>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="carousel-dots"></div> 
+    </section>
+</main>
+<!-- Footer -->
+<footer class="footer">
+    <div class="container footer-content">
+
+        <!-- Cột 1 -->
+        <div class="footer-col">
+            <h3>3 ANH EM - ĂN LÀ GHIỀN</h3>
+            <p>Cơ sở 1: 120 Yên Lãng, P.Đống Đa, Hà Nội</p>
+            <p>Hotline: 0969324428</p>
+            <p>Cơ sở 2: 36 Ngọc Hồi, P.Thanh Trì, Hà Nội</p>
+            <p>Hotline: 0968351972</p>
+            <p>Email: Baanhem@gmail.com</p>
+        </div>
+
+        <!-- Cột 2 -->
+        <div class="footer-col">
+            <h3>GIỜ MỞ CỬA</h3>
+            <p>Sáng: 10h - 14h</p>
+            <p>Chiều: 18h - 22h</p>
+            <p>Tất cả các ngày trong tuần</p>
+        </div>
+
+        <!-- Cột 3 -->
+        <div class="footer-col">
+            <h3>MẠNG XÃ HỘI</h3>
+            <div class="socials">
+                <a href="#"><img src="images/assets/facebook.webp"></a>
+                <a href="#"><img src="images/assets/insta.webp"></a>
+                <a href="#"><img src="images/assets/youtube.webp"></a>
+                <a href="#"><img src="images/assets/x.webp"></a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Copyright -->
+    <div class="footer-bottom">
+        <p>Copyright © 2026 3 Anh Em - Ăn là ghiền. All right reserved</p>
+        <p>Liên hệ</p>
+    </div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/Chuong.js"></script>
+</body>
+</html>

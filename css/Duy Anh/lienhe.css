@@ -1,0 +1,84 @@
+/* --- TRANG LIÊN HỆ --- */
+.contact-modern-section {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 0 20px;
+    font-family: Arial, sans-serif;
+}
+
+.contact-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact-header h2 {
+    font-size: 32px;
+    color: #4a2511; 
+    text-transform: uppercase;
+}
+
+.contact-header p {
+    color: #666;
+    font-size: 16px;
+}
+
+/* Bố cục Grid 2 cột */
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+/* Card Giao Diện */
+.location-card {
+    background-color: #fff9f2; 
+    border: 2px solid #e8d0b3; 
+    border-radius: 12px;
+    padding: 30px; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.location-card h3 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.card-info {
+    text-align: center; 
+}
+
+.card-info p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: #444;
+    font-size: 16px;
+}
+
+.card-info p:last-child {
+    margin-bottom: 0;
+
+.card-info a {
+    color: #d47a4a; 
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card-info a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* Responsive cho điện thoại  */
+@media (max-width: 768px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}

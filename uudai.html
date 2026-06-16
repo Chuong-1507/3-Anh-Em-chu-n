@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Khám phá các chương trình khuyến mãi, ưu đãi combo giá cực sốc và vòng quay may mắn chỉ có tại 3 Anh Em.">
+    <meta name="keywords" content="3 anh em, quan an 3 anh em, thit nuong, lau, do an han quoc, nha hang dong da, yen lang">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Chương trình Ưu đãi - 3 Anh Em">
+    <meta property="og:description" content="Khám phá các chương trình khuyến mãi, ưu đãi combo giá cực sốc và vòng quay may mắn chỉ có tại 3 Anh Em.">
+    <meta property="og:image" content="images/assets/anh_3ae.webp">
+    <title>Chương trình Ưu đãi - 3 Anh Em</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/Duy Anh/duyanh.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!--MENU-->
+    <header class="header">
+            <div class="container header-content">
+
+                <!-- Hamburger menu toggler -->
+                <button class="nav-toggle" aria-label="Toggle navigation menu">☰</button>
+
+                <!-- Logo -->
+                <div class="logo">
+                    <a href="index.html"><img src="images/assets/anh_3ae.webp" alt="logo"></a>
+                </div>
+
+                <!-- Menu -->
+                <nav class="menu">
+                    <ul>
+                        <li><a href="gioithieu.html">Giới thiệu</a></li>
+                        <li><a href="thucdon2.html">Thực đơn</a></li>
+                        <li><a href="datban.html">Đặt bàn</a></li>
+                        <li><a href="uudai.html">Ưu đãi</a></li>
+                        <li><a href="lienhe.html">Liên hệ</a></li>
+                    </ul>
+                </nav>
+                
+                <!---Login + Search-->
+                <div class="login">
+                        <!---Nút đăng nhập-->
+                        <button class="btn-login">Đăng nhập</button>
+                        <!---Form đăng nhập-->
+                        <div id="form-login">
+                            <form>
+                                <div class="form-group" >
+                                    <input type="text" id="username" class="form-input" placeholder="Tên đăng nhập...">
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" id="password" class="form-input" placeholder="Mật khẩu...">
+                                </div>
+                                
+                                <input type="submit" value="Đăng nhập" class="submit">
+                            </form>        
+                        </div>
+                        <!---Box đăng xuất (hiện sau khi log in)-->
+                        <div id="logout-box" >
+                            <button id="btn-logout">Đăng xuất</button>
+                        </div>
+                    </div>
+                    <div class="search">
+                        <input type="search" placeholder="Tìm kiếm...">
+                    </div>
+                </div>
+        </header>
+        <section class="banner">
+    
+        <div class="banner-image">
+            <img src="images/promo/uudai.webp" alt="banner">
+        </div>
+
+<div class="main-content">
+    <!-- CỘT BÊN TRÁI: DANH SÁCH COUPON -->
+    <div class="coupon-section">
+        <div class="coupon-card">
+            <div class="coupon-visual v-50k">
+                <span class="label">COUPON</span>
+                <span class="value">50k</span>
+            </div>
+            <div class="coupon-info">
+                <h3>Coupon 50.000VND</h3>
+                <p>Thời gian áp dụng:<br>01/1/2026 - 31/12/2026</p>
+                <a href="50k.html" class="detail-link">XEM CHI TIẾT</a>
+            </div>
+        </div>
+
+        <div class="coupon-card">
+            <div class="coupon-visual v-100k">
+                <span class="label">COUPON</span>
+                <span class="value">100k</span>
+            </div>
+            <div class="coupon-info">
+                <h3>Coupon 100.000VND</h3>
+                <p>Thời gian áp dụng:<br>01/1/2026 - 31/12/2026</p>
+                <a href="100k.html" class="detail-link">XEM CHI TIẾT</a>
+            </div>
+        </div>
+
+        <div class="coupon-card">
+            <div class="coupon-visual v-200k">
+                <span class="label">COUPON</span>
+                <span class="value">200k</span>
+            </div>
+            <div class="coupon-info">
+                <h3>Coupon 200.000VND</h3>
+                <p>Thời gian áp dụng:<br>01/1/2026 - 31/12/2026</p>
+                <a href="200k.html" class="detail-link">XEM CHI TIẾT</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- CỘT BÊN PHẢI: VÒNG QUAY MAY MẮN -->
+    <div class="lucky-wheel-section">
+        <h3 style="text-align: center; margin-bottom: 20px;">SĂN VOUCHER KHỦNG</h3>
+        <div class="wheel-container">
+            <canvas id="wheel" width="350" height="350"></canvas>
+            <div class="pointer"></div>
+        </div>
+        <button id="spin-btn">QUAY NGAY</button>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container footer-content">
+
+        <!-- Cột 1 -->
+        <div class="footer-col">
+            <h3>3 ANH EM - ĂN LÀ GHIỀN</h3>
+            <p>Cơ sở 1: 120 Yên Lãng, P.Đống Đa, Hà Nội</p>
+            <p>Hotline: 0969324428</p>
+            <p>Cơ sở 2: 36 Ngọc Hồi, P.Thanh Trì, Hà Nội</p>
+            <p>Hotline: 0968351972</p>
+            <p>Email: Baanhem@gmail.com</p>
+        </div>
+
+        <!-- Cột 2 -->
+        <div class="footer-col">
+            <h3>GIỜ MỞ CỬA</h3>
+            <p>Sáng: 10h - 14h</p>
+            <p>Chiều: 18h - 22h</p>
+            <p>Tất cả các ngày trong tuần</p>
+        </div>
+
+        <!-- Cột 3 -->
+        <div class="footer-col">
+            <h3>MẠNG XÃ HỘI</h3>
+            <div class="socials">
+                <a href="#"><img src="images/assets/facebook.webp"></a>
+                <a href="#"><img src="images/assets/insta.webp"></a>
+                <a href="#"><img src="images/assets/youtube.webp"></a>
+                <a href="#"><img src="images/assets/x.webp"></a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Copyright -->
+    <div class="footer-bottom">
+        <p>Copyright © 2026 3 Anh Em - Ăn là ghiền. All right reserved</p>
+        <p>Liên hệ</p>
+    </div>
+</footer>
+<script src="js/duyanh.js"></script>
+<script src="js/data.js"></script>
+</body>
+</html>

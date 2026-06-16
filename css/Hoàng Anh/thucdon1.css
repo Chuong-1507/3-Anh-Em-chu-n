@@ -1,0 +1,133 @@
+
+/* nội dung thực đơn*/
+#container
+{
+	height:1200px;
+	width:100%;
+}
+#monchinh
+{
+	width:100%;
+	height:100%;
+	display:flex;
+}
+#trai
+{
+	margin-top:80px;
+	margin-left:5%;
+	width:25%;
+	height:750px;
+}
+.goimon 
+{
+	color:orange !important;
+}
+#trai p
+{
+	font-size:20px;
+	margin:20px 0;
+}
+#trai a
+{
+	text-decoration: none;
+	color:black;
+	font-weight:bold;
+}
+#trai a:hover
+{
+	color:orange;
+	text-decoration: underline;
+}
+.tieude
+{
+	color:orange;
+	text-align:center;
+	margin-bottom:50px;
+}
+#phai
+{
+	margin-top:50px;
+	width:75%;
+	height:750px;
+	margin-right:4%;
+}
+.boc
+{
+	display:flex;
+	width:100%;
+	height:350px;
+	
+}
+.anh
+{
+	width:30%;
+	height:100%;
+	margin: 0 1%;
+}
+.ten
+{
+	font-size:20px;
+	text-align:center;
+	margin:10px 0;
+}
+
+.gia
+{
+	color:gray;
+	text-align:center;
+	font-size:20px;
+}
+.anh img
+{
+	width:100%;
+	height:60%;
+	border-radius: 15px;
+}
+@media only screen and (max-width: 768px) {
+     #container {
+        height: auto;
+    }
+
+    #phai {
+        height: auto; 
+    }
+	#trai
+	{
+		height:600px;
+		margin-top:120px;
+		overflow:scroll;
+	}
+    .boc {
+        height: 230px;
+    }
+
+    .anh {
+        width: 32%;     
+        margin: 0 1%;
+    }
+	
+    .ten {
+        font-size: 14px; 
+    }
+
+    .gia {
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
